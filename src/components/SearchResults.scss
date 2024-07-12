@@ -1,0 +1,45 @@
+@import '../assets/styles/_variables.scss';
+
+.search-results {
+  .result-item {
+    padding: $padding-medium;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.search-results-popup {
+  background-color: #eee;
+  position: absolute;
+  border-radius: 4px;
+  width: calc(100% - 40px);
+  padding: $padding-medium;
+
+  ul {
+    li {
+      &.no-list-style {
+        list-style-type: none;
+      }
+    }
+  }
+
+  .category-title {
+    margin: 0;
+    background-color: #444444;
+    color: white;
+    padding: $padding-small $padding-medium;
+    border-radius: 4px;
+  }
+
+  button.link {
+    margin-top: $padding-medium;
+    border: none;
+    background-color: transparent;
+    color: $primary-color;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .more-categories {
+    width: 100%;
+  }
+}

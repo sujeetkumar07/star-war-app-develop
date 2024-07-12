@@ -1,0 +1,6 @@
+@import '../assets/styles/_variables.scss';
+
+.button-container {
+  display: flex;
+  gap: $padding-small;
+}

@@ -1,0 +1,51 @@
+@import '../assets/styles/_variables.scss';
+
+.edit-character-form {
+  display: flex;
+  flex-direction: column;
+  gap: $padding-medium;
+  background-color: $modal-background-color;
+  padding: $padding-large;
+  border-radius: $border-radius;
+
+  h2 {
+    margin-bottom: $padding-large;
+    font-size: $font-size-medium;
+    text-align: center;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    font-size: $font-size-small;
+    color: #333;
+  }
+
+  input[type='text'],
+  select {
+    padding: $padding-medium;
+    margin-top: $padding-small;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: $font-size-small;
+    color: #333;
+  }
+
+  input[type='radio'] {
+    margin-right: $padding-small;
+  }
+
+  .radio-group {
+    display: flex;
+    gap: $padding-medium;
+  }
+
+  .radio-group label {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .divider {
+    margin: 10px 0;
+  }
+}
